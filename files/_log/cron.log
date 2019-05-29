@@ -39458,3 +39458,9 @@ Externo #1: Executar taskscheduler
 Externo #1: Executar taskscheduler
 2019-05-29 13:06:01 [@neopolis]
 Externo #2: Executar wakeupAgents
+2019-05-29 14:57:49 [2@neopolis]
+Interno #1: Executar queuednotificationclean
+2019-05-29 14:58:01 [@neopolis]
+Externo #1: Executar taskscheduler
+2019-05-29 14:58:01 [@neopolis]
+Externo #2: Executar wakeupAgents
