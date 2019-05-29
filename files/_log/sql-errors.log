@@ -1,0 +1,1608 @@
+[2019-05-20 12:49:39] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: DELETE FROM `glpi_bookmarks`
+                  WHERE `itemtype` = 'PluginArchiresLocationQuery'
+                        OR `itemtype` = 'PluginArchiresNetworkEquipmentQuery'
+                        OR `itemtype` = 'PluginArchiresApplianceQuery'
+                        OR `itemtype` = 'PluginArchiresView';
+  Error: Table 'sacglpi.glpi_bookmarks' doesn't exist
+  Backtrace :
+  plugins/archires/hook.php:671                      
+  inc/plugin.class.php:468                           plugin_archires_uninstall()
+  front/plugin.form.php:47                           Plugin->uninstall()
+  {"user":"2@neopolis"} 
+[2019-05-27 12:50:39] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.005\", 2.66Mio)"} 
+[2019-05-27 12:50:39] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.003\", 2.68Mio)"} 
+[2019-05-27 12:50:49] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:50:49] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:50:54] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.000\", 2.60Mio)"} 
+[2019-05-27 12:50:54] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:50:59] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:50:59] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:04] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:04] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:09] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:09] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:14] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:14] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:19] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:19] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:24] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:24] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:29] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:29] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:34] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:34] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:39] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:39] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:44] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:44] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:49] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:49] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:54] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:54] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:51:59] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:51:59] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:52:04] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:52:04] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:52:09] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:52:09] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:52:14] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 12:52:14] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:52:19] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 12:52:19] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:52:24] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 12:52:24] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:52:29] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.000\", 2.61Mio)"} 
+[2019-05-27 12:52:29] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:52:34] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 12:52:34] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:52:39] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.000\", 2.61Mio)"} 
+[2019-05-27 12:52:39] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:52:44] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 12:52:44] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:52:50] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:52:50] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:52:55] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:52:55] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:53:00] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:53:00] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:53:05] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:53:05] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:53:10] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.000\", 2.60Mio)"} 
+[2019-05-27 12:53:10] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:53:15] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:53:15] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:53:20] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.000\", 2.60Mio)"} 
+[2019-05-27 12:53:20] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.000\", 2.62Mio)"} 
+[2019-05-27 12:53:25] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:53:25] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:53:30] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:53:30] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:53:35] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.60Mio)"} 
+[2019-05-27 12:53:35] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:53:40] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.000\", 2.60Mio)"} 
+[2019-05-27 12:53:40] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:53:45] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 12:53:45] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 12:56:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 12:56:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 12:58:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 12:58:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:00:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:00:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:02:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:02:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:04:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:04:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:06:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:06:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:08:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:08:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:10:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:10:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:12:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:12:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:14:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:14:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:16:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:16:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:18:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:18:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:20:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.000\", 2.61Mio)"} 
+[2019-05-27 13:20:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.000\", 2.63Mio)"} 
+[2019-05-27 13:22:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:22:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:24:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:24:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:26:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:26:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:28:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.61Mio)"} 
+[2019-05-27 13:28:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
+[2019-05-27 13:30:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT SQL_CALC_FOUND_ROWS DISTINCT `glpi_ticketfollowups`.id,  `glpi_ticketfollowups`.tickets_id AS ticket_id, `glpi_ticketfollowups`.content, `glpi_ticketfollowups`.is_private, `glpi_users`.name AS login, `glpi_users`.realname, `glpi_users`.firstname
+FROM `glpi_ticketfollowups`
+INNER JOIN `glpi_tickets` ON `glpi_tickets`.id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_tickets_users` ON `glpi_tickets_users`.tickets_id = `glpi_ticketfollowups`.tickets_id
+INNER JOIN `glpi_users` ON `glpi_users`.id = `glpi_ticketfollowups`.users_id
+WHERE `glpi_ticketfollowups`.id > -1
+  AND `glpi_ticketfollowups`.users_id <> 2
+  AND `glpi_tickets`.is_deleted = 0
+  AND  ( `glpi_tickets`.`entities_id` IN ('0')  ) 
+  AND `glpi_tickets_users`.users_id = 2
+ORDER BY `glpi_ticketfollowups`.id DESC
+LIMIT 3
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:36 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.62Mio)"} 
+[2019-05-27 13:30:21] glpisqllog.ERROR: DBmysql::query() in /var/www/sac_glpi_info/inc/dbmysql.class.php line 177
+  *** MySQL query error:
+  SQL: SELECT IFNULL(MAX(`glpi_ticketfollowups`.id),0) id FROM `glpi_ticketfollowups`
+  Error: Table 'sacglpi.glpi_ticketfollowups' doesn't exist
+  Backtrace :
+  ...ns/browsernotification/inc/checker.class.php:51 
+  ...s/browsernotification/inc/checker.class.php:263 PluginBrowsernotificationChecker::executeQuery()
+  plugins/browsernotification/ajax/check.php:31      PluginBrowsernotificationChecker::getTicketFollowups()
+  {"user":"2@neopolis","mem_usage":"0.001\", 2.63Mio)"} 
