@@ -39464,3 +39464,67 @@ Interno #1: Executar queuednotificationclean
 Externo #1: Executar taskscheduler
 2019-05-29 14:58:01 [@neopolis]
 Externo #2: Executar wakeupAgents
+2019-06-03 18:54:55 [@INFO-11802856]
+Interno #1: Executar slaticket
+2019-06-03 18:56:37 [@INFO-11802856]
+Interno #1: Executar mailgate
+2019-06-03 19:04:13 [@INFO-11802856]
+Interno #1: Executar queuednotification
+2019-06-03 19:04:41 [@INFO-11802856]
+Interno #1: Executar planningrecall
+2019-06-03 19:08:23 [@INFO-11802856]
+Interno #1: Executar graph
+2019-06-03 19:08:46 [@INFO-11802856]
+Interno #1: Executar temp
+2019-06-03 19:11:31 [@INFO-11802856]
+Interno #1: Executar reservation
+2019-06-03 19:12:23 [@INFO-11802856]
+Interno #1: Executar ticketrecurrent
+2019-06-03 19:18:29 [@INFO-11802856]
+Interno #1: Executar olaticket
+2019-06-03 19:18:34 [@INFO-11802856]
+Interno #1: Executar slaticket
+2019-06-03 19:25:02 [417@INFO-11802856]
+Interno #1: Executar queuednotification
+2019-06-03 19:25:06 [@INFO-11802856]
+Interno #1: Executar mailgate
+2019-06-03 19:26:58 [@INFO-11802856]
+Interno #1: Executar planningrecall
+2019-06-03 19:27:02 [@INFO-11802856]
+Interno #1: Executar slaticket
+2019-06-03 19:27:15 [@INFO-11802856]
+Interno #1: Executar olaticket
+2019-06-03 19:30:13 [@INFO-11802856]
+Interno #1: Executar queuednotification
+2019-06-03 19:30:18 [@INFO-11802856]
+Interno #1: Nada a ser executado
+2019-06-03 19:30:18 [@INFO-11802856]
+Interno #1: Nada a ser executado
+2019-06-03 19:30:19 [@INFO-11802856]
+Interno #1: Nada a ser executado
+2019-06-03 19:30:19 [@INFO-11802856]
+Interno #1: Nada a ser executado
+2019-06-03 19:32:08 [@INFO-11802856]
+Interno #1: Executar planningrecall
+2019-06-03 19:32:23 [@INFO-11802856]
+Interno #1: Executar queuednotification
+2019-06-03 19:39:42 [417@INFO-11802856]
+Interno #1: Executar slaticket
+2019-06-04 16:57:01 [@INFO-11802856]
+Interno #1: Executar olaticket
+2019-06-04 17:07:35 [417@INFO-11802856]
+Interno #1: Executar queuednotification
+2019-06-04 17:56:59 [417@INFO-11802856]
+Interno #1: Executar mailgate
+2019-06-04 17:57:03 [@INFO-11802856]
+Interno #1: Executar planningrecall
+2019-06-04 18:30:19 [417@INFO-11802856]
+Interno #1: Executar slaticket
+2019-06-04 18:34:21 [@INFO-11802856]
+Interno #1: Executar graph
+2019-06-04 18:41:21 [417@INFO-11802856]
+Interno #1: Executar temp
+2019-06-04 18:42:01 [@INFO-11802856]
+Interno #1: Executar reservation
+2019-06-04 18:43:06 [@INFO-11802856]
+Interno #1: Executar ticketrecurrent

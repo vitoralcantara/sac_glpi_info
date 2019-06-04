@@ -77,7 +77,7 @@ if (!file_exists(GLPI_CONFIG_DIR . "/config_db.php")) {
    echo '<meta charset="utf-8"/>'."\n";
    echo "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n";
    echo '<link rel="shortcut icon" type="images/x-icon" href="'.$CFG_GLPI["root_doc"].
-          '/pics/favicon.ico" />';
+          '/pics/favicon.png" />';
 
    // auto desktop / mobile viewport
    echo "<meta name='viewport' content='width=device-width, initial-scale=1'/>";
