@@ -302,3 +302,623 @@
 [login] 3: valcantara fez login no IP 10.10.1.89
 2019-06-11 16:22:56 [@neopolis]
 [login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-01 11:18:13 [@Ubuntu]
+[login] 3: Login falhou para cbtu no IP 10.10.1.89
+2019-07-01 11:18:26 [@Ubuntu]
+[login] 3: glpi fez login no IP 10.10.1.89
+2019-07-01 12:01:03 [@Ubuntu]
+[login] 3: Login falhou para ibernardino no IP 10.10.1.186
+2019-07-01 12:01:32 [@Ubuntu]
+[login] 3: Login falhou para ibernardino no IP 10.10.1.186
+2019-07-01 12:01:50 [@Ubuntu]
+[login] 3: Login falhou para ibernardino no IP 10.10.1.186
+2019-07-01 12:02:06 [@Ubuntu]
+[login] 3: Login falhou para ibernardino no IP 10.10.1.186
+2019-07-01 12:02:39 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-01 12:02:45 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-01 12:02:52 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-01 12:07:17 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-01 12:07:22 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-01 12:57:22 [@Ubuntu]
+[login] 3: Login falhou para bmarinho no IP 10.10.1.96
+2019-07-01 14:22:46 [@Ubuntu]
+[login] 3: glpi fez login no IP 10.10.1.89
+2019-07-01 14:22:47 [@Ubuntu]
+[login] 3: glpi fez login no IP 10.10.1.89
+2019-07-01 15:10:29 [@Ubuntu]
+[login] 3: Login falhou para valcantara no IP 10.10.1.89
+2019-07-01 15:10:35 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-01 15:11:12 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-01 15:12:29 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-01 15:49:00 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-02 07:58:32 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-02 07:58:37 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-02 07:58:47 [@Ubuntu]
+[login] 3: dmsilva fez login no IP 10.10.1.238
+2019-07-02 09:12:51 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-02 09:57:44 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-07-02 12:15:46 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-02 12:15:52 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-02 12:15:58 [@Ubuntu]
+[login] 3: dmsilva fez login no IP 10.10.1.238
+2019-07-02 13:34:26 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-02 14:16:46 [@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.0.96
+2019-07-02 14:16:54 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.0.96
+2019-07-02 14:27:38 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.0.96
+2019-07-02 14:34:22 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-02 15:04:50 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-02 15:15:09 [@Ubuntu]
+[login] 3: Login falhou para guacadmin no IP 10.10.0.146
+2019-07-02 15:15:22 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.0.146
+2019-07-02 15:22:42 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.0.96
+2019-07-02 15:30:22 [@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.0.96
+2019-07-02 15:30:31 [@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.0.96
+2019-07-03 08:59:43 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-03 09:01:28 [@Ubuntu]
+[login] 3: katianne.lopes fez login no IP 10.10.1.188
+2019-07-03 10:30:53 [@Ubuntu]
+[login] 3: wafonso fez login no IP 10.10.0.139
+2019-07-03 13:46:11 [@Ubuntu]
+[login] 3: mfbrito fez login no IP 10.10.1.152
+2019-07-03 14:14:21 [@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.0.96
+2019-07-03 14:14:31 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.0.96
+2019-07-03 14:42:14 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-04 09:27:15 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-04 09:53:09 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-04 13:14:37 [410@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.0.96
+2019-07-04 13:14:47 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.0.96
+2019-07-04 13:36:31 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-04 14:02:09 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.0.96
+2019-07-04 14:07:31 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.0.146
+2019-07-04 14:29:08 [@Ubuntu]
+[login] 3: wafonso fez login no IP 10.10.0.139
+2019-07-04 15:49:15 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-04 16:39:42 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-05 08:18:36 [@Ubuntu]
+[login] 3: rjunqueira fez login no IP 10.10.1.101
+2019-07-05 10:44:54 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-05 10:45:21 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-05 11:16:57 [@Ubuntu]
+[login] 3: zmoura fez login no IP 10.10.1.51
+2019-07-05 13:00:01 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-08 08:10:42 [@Ubuntu]
+[login] 3: Login falhou para fpetit no IP 10.10.1.127
+2019-07-08 08:10:54 [@Ubuntu]
+[login] 3: fpetit fez login no IP 10.10.1.127
+2019-07-08 08:31:51 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-08 09:55:38 [@Ubuntu]
+[login] 3: Login falhou para andremoreira no IP 10.10.1.124
+2019-07-08 09:55:55 [@Ubuntu]
+[login] 3: Login falhou para andremoreira no IP 10.10.1.124
+2019-07-08 11:25:43 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.98
+2019-07-08 13:18:44 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-08 15:10:49 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.0.96
+2019-07-08 15:10:56 [@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.0.96
+2019-07-08 15:11:01 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.0.96
+2019-07-08 16:50:07 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-09 08:07:15 [@Ubuntu]
+[login] 3: rjunqueira fez login no IP 10.10.1.101
+2019-07-09 08:28:38 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-09 08:28:39 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-09 09:10:27 [@Ubuntu]
+[login] 3: fpetit fez login no IP 10.10.1.127
+2019-07-09 09:50:50 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-07-09 11:44:34 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-09 13:10:57 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-09 14:52:25 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.98
+2019-07-09 15:25:26 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.0.96
+2019-07-10 09:53:19 [@Ubuntu]
+[login] 3: Login falhou para ednodantas1 no IP 10.10.1.96
+2019-07-10 09:53:38 [@Ubuntu]
+[login] 3: ednodantas fez login no IP 10.10.1.96
+2019-07-10 09:54:43 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-07-10 10:27:36 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.0.146
+2019-07-10 10:35:12 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.1.98
+2019-07-10 10:35:22 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.98
+2019-07-10 10:42:32 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.98
+2019-07-10 10:44:33 [@Ubuntu]
+[login] 3: Login falhou para vfarias no IP 10.10.0.126
+2019-07-10 10:44:59 [@Ubuntu]
+[login] 3: Login falhou para vfarias no IP 10.10.0.126
+2019-07-10 10:45:51 [@Ubuntu]
+[login] 3: Login falhou para vfarias no IP 10.10.0.126
+2019-07-10 11:11:10 [@Ubuntu]
+[login] 3: vfarias fez login no IP 10.10.0.126
+2019-07-10 13:29:52 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-10 13:38:09 [@Ubuntu]
+[login] 3: gguedes fez login no IP 10.10.1.69
+2019-07-10 14:10:51 [@Ubuntu]
+[login] 3: Login falhou para marinatfc no IP 10.10.1.243
+2019-07-10 14:11:06 [@Ubuntu]
+[login] 3: Login falhou para marinatfc no IP 10.10.1.243
+2019-07-10 14:11:15 [@Ubuntu]
+[login] 3: Login falhou para marinatfc no IP 10.10.1.243
+2019-07-10 14:11:32 [@Ubuntu]
+[login] 3: Login falhou para marinatfc no IP 10.10.1.243
+2019-07-10 15:26:59 [@Ubuntu]
+[login] 3: Login falhou para fnelson no IP 10.10.0.82
+2019-07-10 15:27:11 [@Ubuntu]
+[login] 3: Login falhou para fnelson no IP 10.10.0.82
+2019-07-10 15:27:19 [@Ubuntu]
+[login] 3: Login falhou para fnelson no IP 10.10.0.82
+2019-07-10 15:27:27 [@Ubuntu]
+[login] 3: fnelson fez login no IP 10.10.0.82
+2019-07-10 15:39:57 [@Ubuntu]
+[login] 3: vfonseca fez login no IP 10.10.1.168
+2019-07-10 16:45:21 [@Ubuntu]
+[login] 3: ariany fez login no IP 10.10.1.22
+2019-07-11 09:22:06 [@Ubuntu]
+[login] 3: Login falhou para efidelis no IP 10.10.1.116
+2019-07-11 09:22:21 [@Ubuntu]
+[login] 3: Login falhou para efidelis no IP 10.10.1.116
+2019-07-11 09:25:17 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-07-11 09:25:17 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-07-11 09:25:30 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-07-11 09:26:45 [@Ubuntu]
+[login] 3: efidelis fez login no IP 10.10.1.116
+2019-07-11 09:27:29 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-11 10:16:16 [@Ubuntu]
+[login] 3: vfarias fez login no IP 10.10.0.126
+2019-07-11 13:14:59 [@Ubuntu]
+[login] 3: ibernardino fez login no IP 10.10.1.186
+2019-07-11 13:32:58 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-11 14:53:46 [@Ubuntu]
+[login] 3: vfonseca fez login no IP 10.10.1.168
+2019-07-11 15:04:30 [@Ubuntu]
+[login] 3: fpetit fez login no IP 10.10.1.127
+2019-07-11 15:06:00 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.0.146
+2019-07-11 15:06:15 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.0.146
+2019-07-12 08:13:16 [@Ubuntu]
+[login] 3: fpetit fez login no IP 10.10.1.127
+2019-07-12 08:26:12 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.1.96
+2019-07-12 08:26:29 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-07-12 09:19:25 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.1.98
+2019-07-12 09:19:36 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.98
+2019-07-12 12:50:38 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-12 14:50:59 [@Ubuntu]
+[login] 3: Login falhou para cmoraes no IP 10.10.1.189
+2019-07-12 14:51:43 [@Ubuntu]
+[login] 3: Login falhou para cmoraes no IP 10.10.1.189
+2019-07-12 14:52:25 [@Ubuntu]
+[login] 3: cmoraes fez login no IP 10.10.1.189
+2019-07-12 15:06:10 [@Ubuntu]
+[login] 3: Login falhou para katianne.lopes no IP 10.10.1.188
+2019-07-12 15:06:37 [@Ubuntu]
+[login] 3: Login falhou para katianne.lopes no IP 10.10.1.188
+2019-07-12 15:06:53 [@Ubuntu]
+[login] 3: Login falhou para katianne no IP 10.10.1.188
+2019-07-12 15:12:52 [@Ubuntu]
+[login] 3: Login falhou para cMoraes no IP 10.10.1.224
+2019-07-12 15:13:23 [@Ubuntu]
+[login] 3: Login falhou para cmoraes no IP 10.10.1.224
+2019-07-12 15:13:49 [@Ubuntu]
+[login] 3: cmoraes fez login no IP 10.10.1.224
+2019-07-12 15:14:25 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-12 15:22:29 [@Ubuntu]
+[login] 3: katianne.lopes fez login no IP 10.10.1.188
+2019-07-12 15:40:26 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.1.189
+2019-07-12 15:41:06 [@Ubuntu]
+[login] 3: cmoraes fez login no IP 10.10.1.189
+2019-07-15 10:45:52 [@Ubuntu]
+[login] 3: rjunqueira fez login no IP 10.10.1.101
+2019-07-15 13:24:58 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-15 15:16:08 [@Ubuntu]
+[login] 3: Login falhou para cfilho no IP 10.10.1.74
+2019-07-15 15:16:23 [@Ubuntu]
+[login] 3: cfilho fez login no IP 10.10.1.74
+2019-07-16 09:40:12 [@Ubuntu]
+[login] 3: efidelis fez login no IP 10.10.0.103
+2019-07-16 10:49:17 [@Ubuntu]
+[login] 3: vfarias fez login no IP 10.10.0.126
+2019-07-16 11:10:33 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-16 11:10:43 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-16 11:10:52 [@Ubuntu]
+[login] 3: dmsilva fez login no IP 10.10.1.238
+2019-07-16 11:49:39 [@Ubuntu]
+[login] 3: srodrigues fez login no IP 10.10.0.115
+2019-07-16 13:07:08 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-16 13:13:52 [@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.0.96
+2019-07-16 13:13:58 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.0.96
+2019-07-16 14:40:04 [@Ubuntu]
+[login] 3: mfbrito fez login no IP 10.10.1.152
+2019-07-16 15:14:40 [@Ubuntu]
+[login] 3: fpetit fez login no IP 10.10.1.127
+2019-07-16 16:32:21 [@Ubuntu]
+[login] 3: Login falhou para ysia.ludmila no IP 10.10.0.140
+2019-07-16 16:32:31 [@Ubuntu]
+[login] 3: ysia.ludmila fez login no IP 10.10.0.140
+2019-07-16 16:52:41 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-16 16:54:24 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.0.96
+2019-07-17 09:06:06 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.1.96
+2019-07-17 10:05:50 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-17 13:22:42 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-18 09:49:11 [@Ubuntu]
+[login] 3: Login falhou para eholanda no IP 10.10.0.119
+2019-07-18 09:49:17 [@Ubuntu]
+[login] 3: eholanda fez login no IP 10.10.0.119
+2019-07-18 09:51:28 [@Ubuntu]
+[login] 3: Jgneto fez login no IP 10.10.1.49
+2019-07-18 09:55:38 [@Ubuntu]
+[login] 3: sebastiana.pedroza fez login no IP 10.10.1.73
+2019-07-18 10:31:26 [@Ubuntu]
+[login] 3: mfbrito fez login no IP 10.10.1.152
+2019-07-18 10:32:29 [@Ubuntu]
+[login] 3: eholanda fez login no IP 10.10.0.119
+2019-07-18 13:22:54 [@Ubuntu]
+[login] 3: Login falhou para ewalter no IP 10.10.1.129
+2019-07-18 13:23:13 [@Ubuntu]
+[login] 3: ewalter fez login no IP 10.10.1.129
+2019-07-18 13:26:11 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-18 13:26:20 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-18 13:26:30 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-18 13:26:39 [@Ubuntu]
+[login] 3: dmsilva fez login no IP 10.10.1.238
+2019-07-18 13:35:42 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-19 08:40:13 [@Ubuntu]
+[login] 3: rjunqueira fez login no IP 10.10.1.101
+2019-07-19 11:02:07 [@Ubuntu]
+[login] 3: Sebastiana.Pedroza fez login no IP 10.10.1.73
+2019-07-19 11:04:53 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-19 13:21:05 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-19 14:50:38 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.219
+2019-07-22 09:39:51 [@Ubuntu]
+[login] 3: Login falhou para andre.pires no IP 10.10.1.224
+2019-07-22 09:40:03 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-22 09:42:36 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-22 10:20:48 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.89
+2019-07-22 13:28:00 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-22 13:30:06 [@Ubuntu]
+[login] 3: Login falhou para cfilho no IP 10.10.1.74
+2019-07-22 13:30:15 [@Ubuntu]
+[login] 3: cfilho fez login no IP 10.10.1.74
+2019-07-22 13:36:19 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-22 13:37:52 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-22 13:59:12 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.1.96
+2019-07-22 13:59:22 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-22 15:30:01 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.89
+2019-07-22 16:18:29 [@Ubuntu]
+[login] 3: fpetit fez login no IP 10.10.1.127
+2019-07-22 16:25:20 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.1.219
+2019-07-22 16:25:27 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.219
+2019-07-23 08:41:07 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-07-23 09:37:07 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-23 13:23:11 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-23 13:33:16 [@Ubuntu]
+[login] 3: eholanda fez login no IP 10.10.0.119
+2019-07-23 14:21:14 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.219
+2019-07-23 14:56:14 [@Ubuntu]
+[login] 3: ibernardino fez login no IP 10.10.1.186
+2019-07-23 16:05:51 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-23 16:45:53 [@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.1.218
+2019-07-24 09:33:23 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-24 09:43:13 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-07-25 08:19:50 [@Ubuntu]
+[login] 3: fpetit fez login no IP 10.10.1.127
+2019-07-25 09:37:41 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-25 10:10:01 [@Ubuntu]
+[login] 3: Login falhou para dmsilva no IP 10.10.1.238
+2019-07-25 10:10:08 [@Ubuntu]
+[login] 3: dmsilva fez login no IP 10.10.1.238
+2019-07-25 11:02:08 [@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.1.218
+2019-07-25 11:02:20 [@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.1.218
+2019-07-25 11:02:32 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.218
+2019-07-25 11:21:16 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-25 11:30:44 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-25 11:41:45 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.219
+2019-07-26 09:07:29 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.1.96
+2019-07-26 09:07:53 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-07-26 10:27:32 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-26 10:27:33 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-26 11:32:32 [@Ubuntu]
+[login] 3: Jgneto fez login no IP 10.10.1.73
+2019-07-26 12:52:03 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-26 13:12:15 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-29 06:24:56 [@Ubuntu]
+[login] 3: Login falhou para ibernardino no IP 10.10.1.124
+2019-07-29 06:25:07 [@Ubuntu]
+[login] 3: ibernardino fez login no IP 10.10.1.124
+2019-07-29 08:37:26 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-29 09:06:00 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-29 09:19:04 [@Ubuntu]
+[login] 3: Login falhou para deybsonmelo no IP 10.10.1.98
+2019-07-29 09:19:23 [@Ubuntu]
+[login] 3: Login falhou para deybsonmelo no IP 10.10.1.98
+2019-07-29 09:19:42 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.98
+2019-07-29 09:22:15 [@Ubuntu]
+[login] 3: katianne.lopes fez login no IP 10.10.0.112
+2019-07-29 12:07:11 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.98
+2019-07-29 14:19:15 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-07-29 14:44:32 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.98
+2019-07-29 15:18:59 [@Ubuntu]
+[login] 3: Login falhou para marinatfc no IP 10.10.1.243
+2019-07-29 16:31:50 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-30 08:58:32 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.89
+2019-07-30 10:09:27 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-07-30 11:42:58 [@Ubuntu]
+[login] 3: Login falhou para gassis no IP 10.10.1.169
+2019-07-30 11:43:03 [@Ubuntu]
+[login] 3: gassis fez login no IP 10.10.1.169
+2019-07-30 13:39:14 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-31 08:58:33 [@Ubuntu]
+[login] 3: rjunqueira fez login no IP 10.10.1.101
+2019-07-31 09:03:11 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.89
+2019-07-31 09:16:22 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-31 11:48:22 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-07-31 13:25:55 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-07-31 13:58:14 [@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.1.218
+2019-07-31 13:58:20 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.218
+2019-07-31 15:30:37 [@Ubuntu]
+[login] 3: Login falhou para kemygdio no IP 10.10.0.75
+2019-07-31 15:30:55 [@Ubuntu]
+[login] 3: kemygdio fez login no IP 10.10.0.75
+2019-07-31 16:00:17 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.219
+2019-07-31 16:38:20 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-08-01 09:50:24 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-01 13:19:53 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-08-02 08:51:20 [@Ubuntu]
+[login] 3: fpetit fez login no IP 10.10.1.127
+2019-08-02 09:31:24 [@Ubuntu]
+[login] 3: Login falhou para carlos.filho no IP 10.10.1.96
+2019-08-02 09:31:44 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-08-02 10:29:22 [@Ubuntu]
+[login] 3: Login falhou para dtargino no IP 10.10.0.146
+2019-08-02 11:16:00 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-02 12:45:39 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-08-02 16:35:19 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-02 16:41:12 [@Ubuntu]
+[login] 3: lbessa fez login no IP 10.10.1.63
+2019-08-05 06:38:47 [@Ubuntu]
+[login] 3: ibernardino fez login no IP 10.10.1.124
+2019-08-05 07:39:31 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-08-05 08:00:09 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-08-05 08:23:46 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-05 09:41:58 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.219
+2019-08-05 10:32:21 [@Ubuntu]
+[login] 3: Login falhou para pmarinho no IP 10.10.1.85
+2019-08-05 10:32:31 [@Ubuntu]
+[login] 3: Login falhou para pmarinho no IP 10.10.1.85
+2019-08-05 10:32:52 [@Ubuntu]
+[login] 3: pmarinho fez login no IP 10.10.1.85
+2019-08-05 13:20:35 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-05 13:29:38 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-08-06 09:08:45 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-08-06 09:11:43 [@Ubuntu]
+[login] 3: ibernardino fez login no IP 10.10.1.124
+2019-08-06 10:40:50 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-06 11:34:18 [@Ubuntu]
+[login] 3: Login falhou para amfilho no IP 10.10.1.63
+2019-08-06 11:34:26 [@Ubuntu]
+[login] 3: amfilho fez login no IP 10.10.1.63
+2019-08-06 12:28:20 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-08-06 13:10:42 [@Ubuntu]
+[login] 3: rjunqueira fez login no IP 10.10.1.101
+2019-08-06 13:59:08 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-06 14:19:58 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-08-07 09:00:23 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-08-07 10:41:23 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-08-07 10:51:52 [@Ubuntu]
+[login] 3: Login falhou para rporto no IP 10.10.0.118
+2019-08-07 10:52:01 [@Ubuntu]
+[login] 3: Login falhou para rporto no IP 10.10.0.118
+2019-08-07 10:52:11 [@Ubuntu]
+[login] 3: Login falhou para rporto no IP 10.10.0.118
+2019-08-07 10:52:20 [@Ubuntu]
+[login] 3: Login falhou para rporto no IP 10.10.0.118
+2019-08-07 10:52:35 [@Ubuntu]
+[login] 3: rporto fez login no IP 10.10.0.118
+2019-08-07 11:07:03 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-07 13:10:47 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-08-07 13:21:11 [@Ubuntu]
+[login] 3: wneto fez login no IP 10.10.1.199
+2019-08-07 13:48:31 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-08-07 14:21:05 [@Ubuntu]
+[login] 3: deybsonmelo fez login no IP 10.10.1.219
+2019-08-08 08:08:58 [@Ubuntu]
+[login] 3: fpetit fez login no IP 10.10.1.127
+2019-08-08 08:08:59 [@Ubuntu]
+[login] 3: fpetit fez login no IP 10.10.1.127
+2019-08-08 08:12:40 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-08 08:50:25 [@Ubuntu]
+[login] 3: Login falhou para valcantara no IP 10.10.1.89
+2019-08-08 08:50:51 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-08 10:21:09 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.98
+2019-08-08 11:39:08 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.96
+2019-08-08 13:28:57 [@Ubuntu]
+[login] 3: bmarinho fez login no IP 10.10.1.96
+2019-08-08 13:29:23 [@Ubuntu]
+[login] 3: lbessa fez login no IP 10.10.1.77
+2019-08-08 14:47:10 [@Ubuntu]
+[login] 3: lbessa fez login no IP 10.10.1.77
+2019-08-08 15:22:46 [@Ubuntu]
+[login] 3: Login falhou para efidelis no IP 10.10.1.116
+2019-08-08 15:23:21 [@Ubuntu]
+[login] 3: efidelis fez login no IP 10.10.1.116
+2019-08-08 15:25:25 [@Ubuntu]
+[login] 3: carlos.filho fez login no IP 10.10.1.218
+2019-08-09 08:20:44 [@Ubuntu]
+[login] 3: fpetit fez login no IP 10.10.1.127
+2019-08-09 08:22:40 [@Ubuntu]
+[login] 3: andre.pires fez login no IP 10.10.1.224
+2019-08-09 09:17:19 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.1.89
+2019-08-09 09:17:20 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.1.89
+2019-08-09 09:37:31 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-09 09:52:08 [@Ubuntu]
+[login] 3: Login falhou para  no IP 10.10.1.89
+2019-08-09 09:52:15 [@Ubuntu]
+[login] 3: valcantara fez login no IP 10.10.1.89
+2019-08-09 09:53:01 [@Ubuntu]
+[login] 3: eholanda fez login no IP 10.10.0.20
+2019-08-09 10:16:13 [@Ubuntu]
+[login] 3: acbezerra fez login no IP 10.10.1.1

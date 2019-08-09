@@ -457,7 +457,7 @@ function getPreviousItem($table, $ID, $condition = "", $nextprev_item = "name") 
 **/
 function formatUserName($ID, $login, $realname, $firstname, $link = 0, $cut = 0, $force_config = false) {
    $dbu = new DbUtils();
-   return $dbu->formatUserName($ID, $login, $realname, $firstname, $link, $cut, $force_config);
+   return $dbu->formatUserName($ID, $login, $firstname, $realname, $link, $cut, $force_config);
 }
 
 

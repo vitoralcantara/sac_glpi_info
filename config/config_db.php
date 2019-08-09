@@ -1,7 +1,7 @@
 <?php
 class DB extends DBmysql {
    public $dbhost     = 'localhost';
-   public $dbuser     = 'root';
-   public $dbpassword = '5tun%40t';
+   public $dbuser     = 'glpi';
+   public $dbpassword = 'm1r4550l';
    public $dbdefault  = 'sacglpi';
 }
